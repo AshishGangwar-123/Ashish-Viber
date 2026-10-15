@@ -164,7 +164,7 @@ def list_files(path: str = ".") -> str:
         for current, dirs, files in os.walk(target):
             current_path = Path(current)
 
-            # Do not follow symlinked directories.
+           
             dirs[:] = [
                 name for name in dirs
                 if name not in IGNORED_DIRS
